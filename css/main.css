@@ -1,5 +1,4 @@
 /* Scss Document */
-
 html {
   --bg: #fcfcfc;
   --bg-panel: #ebebeb;
@@ -17,13 +16,15 @@ html[data-theme="dark"] {
 body {
   background-color: var(--bg);
   color: var(--color-text);
-  h2 {
-    color: var(--color-headings);
-  }
-  .well {
-    color: var(--color-text);
-    background-color: var(--bg);
-  }
+}
+
+body h2 {
+  color: var(--color-headings);
+}
+
+body .well {
+  color: var(--color-text);
+  background-color: var(--bg);
 }
 
 .panel {
@@ -31,7 +32,9 @@ body {
   margin: 1em;
   padding: 1em;
   border-radius: 10px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
 }
 
@@ -39,6 +42,9 @@ html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
+  -webkit-transition: all 750ms !important;
   transition: all 750ms !important;
-  transition-delay: 0 !important;
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
 }
+/*# sourceMappingURL=main.css.map */

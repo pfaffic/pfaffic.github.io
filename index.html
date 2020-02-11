@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/toggle_slider.css">
-<link rel="stylesheet" href="css/main.scss">
+<link rel="stylesheet" href="css/main.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -24,13 +24,13 @@
     <hr>
     <div class="row">
 	  <div class="col-lg-8 col-md-8 col-sm-7">
-		  <img src="images/Logo+Name_blue.png" alt="" width="600" height="100" class="img-responsive"/>
+		  <img id="bild" src="images/Logo+Name_blue.png" alt="" width="600" height="100" class="img-responsive"/>
       </div>
       <div class="col-lg-2 col-md-1 col-sm-2 col-xs-6">
 		<!-- Rounded switch -->
 <h4>Darkmode</h4>
 <label class="switch">
-  <input type="checkbox">
+  <input type="checkbox" id="switch" name="theme">
   <span class="slider round"></span>
 </label>
 	</div>
@@ -39,7 +39,7 @@
       </div>
     </div>
     <hr>
-    <div class="row">
+    <div class="row panel">
       <div class="col-lg-7 col-md-6">
         <div class="media">
           <div class="media-left"> <a href="#"> <img class="media-object img-rounded" src="images/115h/Passfoto.png" alt="..."> </a> </div>
@@ -269,5 +269,7 @@ Mein Name ist Christoh Pfaffmann und ich studiere zurzeit Mathematik und Geograp
 <script src="js/jquery-1.11.3.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.js"></script>
+<!-- Toggle Switch - Change Theme-->
+<script src="js/toggle_slider.js"></script>
 </body>
 </html>

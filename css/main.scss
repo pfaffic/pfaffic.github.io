@@ -3,6 +3,7 @@
 html {
   --bg: #fcfcfc;
   --bg-panel: #ebebeb;
+  --bg-well: #777777;
   --color-headings: #0f073f;
   --color-text: #333333;
 }
@@ -10,7 +11,8 @@ html {
 html[data-theme="dark"] {
   --bg: #333333;
   --bg-panel: #434343;
-  --color-headings: #ebebeb;
+  --bg-well: #222222;
+  --color-headings: #000000;
   --color-text: #fcfcfc;
 }
 
@@ -22,7 +24,7 @@ body {
   }
   .well {
     color: var(--color-text);
-    background-color: var(--bg);
+    background-color: var(--bg-well);
   }
 }
 

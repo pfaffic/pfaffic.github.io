@@ -4,11 +4,11 @@ checkbox.addEventListener("change", function() {
   if (this.checked) {
     trans();
     document.documentElement.setAttribute("data-theme", "dark");
-    document.documentElement.setAttribute("src", "images/Logo+Name_light.png");
+    document.getElementById("logo").src = "images/Logo+Name_light.png";
   } else {
     trans();
     document.documentElement.setAttribute("data-theme", "light");
-    document.documentElement.setAttribute("src", "images/Logo+Name_blue.png");
+    document.getElementById("logo").src = "images/Logo+Name_blue.png";
   }
 });
 

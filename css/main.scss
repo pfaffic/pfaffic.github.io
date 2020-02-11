@@ -1,0 +1,12 @@
+/* Scss Document */
+
+html{
+	--bg: #00FCFC;
+	--bg-panel: #EBEBEB;
+	--color-headings: #0077FF;
+	--color-text: #333333;
+}
+
+body{
+	background-color: var(--bg);
+}

@@ -5,6 +5,8 @@ html {
   --bg-well: #bebebe;
   --color-headings: #0f073f;
   --color-text: #333333;
+  --color-links: #0f073f;
+  --color-links-hover: #4c34fb;
 }
 
 html[data-theme="dark"] {
@@ -13,6 +15,8 @@ html[data-theme="dark"] {
   --bg-well: #3f3f3f;
   --color-headings: #dddddd;
   --color-text: #fcfcfc;
+  --color-links: #ffffff;
+  --color-links-hover: #2196f3;
 }
 
 body {
@@ -27,6 +31,14 @@ body h2 {
 body .well {
   color: var(--color-text);
   background-color: var(--bg-well);
+}
+
+body a h4 {
+  color: var(--color-links);
+}
+
+body a:hover h4 {
+  color: var(--color-links-hover);
 }
 
 .panel {
